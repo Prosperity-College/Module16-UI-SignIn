@@ -24,55 +24,60 @@ form {
   text-align: center;
   max-width: 400px;
   margin: 0 auto;
-}
 
-h1 {
-  margin-bottom: 30px;
-  font-family: "Montserrat", "sans-serif";
-  font-weight: 600;
-  font-size: 35px;
-  text-decoration: underline;
-  color: #293E6A;
-}
+  h1 {
+    margin-bottom: 30px;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 600;
+    font-size: 35px;
+    text-decoration: underline;
+    color: #293E6A;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: calc(100% - 15px);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px #ccc;
+    font-family: Arial, sans-serif;
+    outline: none;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  input[type="submit"], button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    font-family: "Montserrat", "sans-serif";
+  }
 
-input[type="text"],
-input[type="password"] {
-  width: calc(100% - 15px);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 1px 1px 5px #ccc;
-  font-family: Arial, sans-serif;
-  outline: none;
-  font-family: "Montserrat", "sans-serif";
-  font-size: 16px;
-  font-weight: 600;
-}
-
-input[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  font-weight: bold;
-  transition: all 0.3s ease-in-out;
-  font-family: "Montserrat", "sans-serif";
-}
-
-input[type="submit"]:hover {
-  background-color: #3e8e41;
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus {
-  border: 2px solid #4CAF50;
+  button {
+    margin-top: 20px;
+    background-color: rgb(212, 24, 24);
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border: 2px solid #4CAF50;
+  }
 }
