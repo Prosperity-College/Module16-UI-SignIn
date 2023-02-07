@@ -20,6 +20,8 @@ submitButton.addEventListener("click", function (event) {
     resultContainer.innerHTML = "You are now logged in";
     resultContainer.style.color = "green";
     localStorage.setItem("loggedIn", "true");
+    localStorage.setItem("username", username);
+    localStorage.setItem("password", password);
     usernameInput.disabled = true;
     passwordInput.disabled = true;
     submitButton.disabled = true;
@@ -37,10 +39,11 @@ submitButton.addEventListener("click", function (event) {
 
 function checkLogin() {
   if (localStorage.getItem("loggedIn") === "true") {
-    console.log(resultContainer);
     resultContainer.innerHTML = "You are already logged in";
     resultContainer.style.color = "green";
     revokeButton.style.display = "block";
+    usernameInput.value = localStorage.getItem("username");
+    passwordInput.value = localStorage.getItem("password");
     usernameInput.disabled = true;
     passwordInput.disabled = true;
     submitButton.disabled = true;
