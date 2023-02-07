@@ -1,4 +1,10 @@
-Email <input>
-Wachtwoord <input>
-Log In <submit>
-<form>
+- Responsive
+- Use of localStorage
+- Sign out button
+- Can't use <input> when already signed in
+- Specific use of color
+- Placeholders
+- Tabindex
+- Validation (through JavaScript)
+- Logical layout
+- Error handling (through JavaScript)

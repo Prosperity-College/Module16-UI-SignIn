@@ -56,13 +56,13 @@ function checkLogin() {
   form.appendChild(resultContainer);
 }
 
-revokeButton.textContent = "Revoke Login";
+revokeButton.textContent = "Sign out";
 revokeButton.style.display = "none";
 revokeButton.addEventListener("click", function (event) {
   event.preventDefault();
   checkLogin();
   localStorage.removeItem("loggedIn");
-  resultContainer.innerHTML = "You have revoked your login";
+  resultContainer.innerHTML = "You have now signed out";
   resultContainer.style.color = "red";
   revokeButton.style.display = "none";
   usernameInput.disabled = false;
