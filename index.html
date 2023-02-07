@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in Pagina</title>
+    <title>Sign in page</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <form>
-        <h2>Login</h2>
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
-        <input type="submit" value="Submit">
-      </form>
+      <h1>Sign in.</h1>
+      <input type="text" placeholder="Username" tabindex="1" required>
+      <input type="password" placeholder="Password" tabindex="2" required>
+      <input type="submit" value="Submit" tabindex="3" required>
+      <div id="result"></div>
+    </form>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
